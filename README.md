@@ -35,6 +35,17 @@ Then, modify the constant ```FORTNITE_API_KEY ```with your fornitetracker api ke
 
 You are all setup to run the script, execute the command ```./script.sh ```  
 
+## What are the commands?
+
+Once your bot is running, in a text channel you can user theses commands:  
+
+1) ``` /nick YOUR_FORNITE_USERNAME ``` Change the your discord username to your fortnite username.  
+2) ``` /rank ``` Automaticly rank you according to your fortnite Kill/Death ratio.   
+
+---
+
+3) ```/patch ```Return the last patch notes of fortnite.  
+
 ## License
 
 The project is under [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  

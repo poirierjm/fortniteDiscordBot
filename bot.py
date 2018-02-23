@@ -33,7 +33,7 @@ ILLUMINATI_E = 7.99
 HACKEUR_B = 8.00
 HACKEUR_E = 100
 
-# Lire les stats fortnite d'un joueur
+# Return the overall K/D of the fortnite player pass in parameter
 def get_ratio(username):
     print(username)
     link = 'https://api.fortnitetracker.com/v1/profile/pc/' + username
