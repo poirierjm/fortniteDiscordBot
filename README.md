@@ -4,7 +4,7 @@
 
 With this script, discord users can rank themself with commands.  
 Your rank depend of your overall fortnite Kill/Death ratio.
-Here are the ranks you can have, you need to create all of these ranks in your discord in order to the bot work.
+Here are the ranks you can have, you need to create all of these ranks in your discord in order so the bot work.
 ```
 @Wood,        0.00 → 0.99  K/D  
 @Carton,      1.00 → 1.49  K/D  
@@ -39,7 +39,7 @@ You are all setup to run the script, execute the command ```./script.sh```
 
 Once your bot is running, in a text channel you can use theses commands:  
 
-1) ```/nick YOUR_FORNITE_USERNAME``` Change the your discord username to your fortnite username.  
+1) ```/nick YOUR_FORNITE_USERNAME``` Change your discord username to your fortnite username.  
 2) ```/rank``` Automaticly rank you according to your fortnite Kill/Death ratio.   
 3) ```/patch``` Return the last patch notes of fortnite.  
 
