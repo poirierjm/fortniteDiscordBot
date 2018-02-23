@@ -20,7 +20,7 @@ Here are the ranks you can have, you need to create all of these ranks in your d
 ```
 
 Once the ranks are created you can create rooms with permissions based on the rank / K/D of the user.  
-An example of a discord using the bot.  
+An example of a discord implementing the bot.  
 ![alt text](discordEx.png "Discord example")
 
 
@@ -30,21 +30,18 @@ Jean-Michel Poirier (poirier.jmp@gmail.com)
 
 ## How to run?
 
-To setup the bot, open the file ```bot.py ``` and modify the constant ```DISCORD_TOKEN ```with your own discord token. 
-Then, modify the constant ```FORTNITE_API_KEY ```with your fornitetracker api key. You can get one at https://fortnitetracker.com  
+To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token. 
+Then, modify the constant ```FORTNITE_API_KEY``` with your fornitetracker api key. You can get one at https://fortnitetracker.com  
 
-You are all setup to run the script, execute the command ```./script.sh ```  
+You are all setup to run the script, execute the command ```./script.sh```  
 
 ## What are the commands?
 
-Once your bot is running, in a text channel you can user theses commands:  
+Once your bot is running, in a text channel you can use theses commands:  
 
-1) ``` /nick YOUR_FORNITE_USERNAME ``` Change the your discord username to your fortnite username.  
-2) ``` /rank ``` Automaticly rank you according to your fortnite Kill/Death ratio.   
-
----
-
-3) ```/patch ```Return the last patch notes of fortnite.  
+1) ```/nick YOUR_FORNITE_USERNAME``` Change the your discord username to your fortnite username.  
+2) ```/rank``` Automaticly rank you according to your fortnite Kill/Death ratio.   
+3) ```/patch``` Return the last patch notes of fortnite.  
 
 ## License
 
