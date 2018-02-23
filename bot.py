@@ -109,7 +109,7 @@ async def on_message(message):
         return
     # The command /patch return a link withvthe lastest patch note
     if message.content.startswith('/patch'):
-        await client.send_message(message.channel, 'La dernière patchnote: https://www.epicgames.com/fortnite/en/news')
+        await client.send_message(message.channel, 'Last patchnotes: https://www.epicgames.com/fortnite/en/news')
     # The command /rank return attribute a rank according to the K/D of the user
     if message.content.startswith("/rank"):
         username = '{0.author.display_name}'.format(message)
@@ -117,9 +117,9 @@ async def on_message(message):
         print(ratio)
         if ratio >= WOOD_B and ratio <= WOOD_E:
             role = discord.utils.get(message.server.roles, name=LISTE[0])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(CARTON_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(CARTON_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(WOOD_B, WOOD_E, ratio))
             for list in LISTE:
@@ -128,9 +128,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= CARTON_B and ratio <= CARTON_E:
             role = discord.utils.get(message.server.roles, name=LISTE[1])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(BRONZE_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(BRONZE_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(CARTON_B, CARTON_E, ratio))
             for list in LISTE:
@@ -139,9 +139,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= BRONZE_B and ratio <= BRONZE_E:
             role = discord.utils.get(message.server.roles, name=LISTE[2])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(SILVER_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(SILVER_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(BRONZE_B, BRONZE_E, ratio))
             for list in LISTE:
@@ -150,9 +150,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= SILVER_B and ratio <= SILVER_E:
             role = discord.utils.get(message.server.roles, name=LISTE[3])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(GOLD_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(GOLD_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(SILVER_B, SILVER_E, ratio))
             for list in LISTE:
@@ -161,9 +161,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= GOLD_B and ratio <= GOLD_E:
             role = discord.utils.get(message.server.roles, name=LISTE[4])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(PLATINUM_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(PLATINUM_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(GOLD_B, GOLD_E, ratio))
             for list in LISTE:
@@ -172,9 +172,9 @@ async def on_message(message):
             await client.add_roles(message.author, role)  
         elif ratio >= PLATINUM_B and ratio <= PLATINUM_E:
             role = discord.utils.get(message.server.roles, name=LISTE[5])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(DIAMOND_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(DIAMOND_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(PLATINUM_B, PLATINUM_E, ratio))
             for list in LISTE:
@@ -183,9 +183,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= DIAMOND_B and ratio <= DIAMOND_E:
             role = discord.utils.get(message.server.roles, name=LISTE[6])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(RUBY_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(RUBY_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(DIAMOND_B, DIAMOND_E, ratio))
             for list in LISTE:
@@ -194,9 +194,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= RUBY_B and ratio <= RUBY_E:
             role = discord.utils.get(message.server.roles, name=LISTE[7])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(ROYALITY_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(ROYALITY_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(RUBY_B, RUBY_E, ratio))
             for list in LISTE:
@@ -205,9 +205,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= ROYALITY_B and ratio <= ROYALITY_E:
             role = discord.utils.get(message.server.roles, name=LISTE[8])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(ILLUMINATI_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(ILLUMINATI_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(ROYALITY_B, ROYALITY_E, ratio))
             for list in LISTE:
@@ -216,9 +216,9 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= ILLUMINATI_B and ratio <= ILLUMINATI_E:
             role = discord.utils.get(message.server.roles, name=LISTE[9])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Prochain niveau: " + str(ratio) + "k/d  **→**  " + str(HACKEUR_B) + "k/d"
+            msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(HACKEUR_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(ILLUMINATI_B, ILLUMINATI_E, ratio))
             for list in LISTE:
@@ -227,16 +227,16 @@ async def on_message(message):
             await client.add_roles(message.author, role) 
         elif ratio >= HACKEUR_B:
             role = discord.utils.get(message.server.roles, name=LISTE[10])
-            msg = ("{0.author.mention} Vous avez ete ranker " + role.name).format(message)
+            msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Ton ratio: " + str(ratio) + " K/D \n Niveau Max! ¯\_(ツ)_/¯ "
+            msgRatio = "Your ratio: " + str(ratio) + " K/D \n Niveau Max! ¯\_(ツ)_/¯ "
             await client.send_message(message.channel, msgRatio)
             for list in LISTE:
                 roles = discord.utils.get(message.server.roles, name=list)
                 await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio == -1:
-            msg = "Your discord name is not a fortnite username!\n Use the command ```/nick YOUR_FORTNITE_USERNAME``` first!".format(message)
+            msg = "Your discord name is not a fortnite username! Use the command ```/nick YOUR_FORTNITE_USERNAME``` first!".format(message)
             await client.send_message(message.channel, msg)
         elif ratio == -2:
             msg = "The fortnite servers are offline. Try again later!".format(message)
