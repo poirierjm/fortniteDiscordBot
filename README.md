@@ -4,7 +4,7 @@
 
 With this script, discord users can rank themself with commands.  
 Your rank depend of your overall fortnite Kill/Death ratio.
-Here are the ranks you can have, you need to create all of these ranks in your discord in order so the bot work.
+Here are the ranks you can have, __you need to create all of these ranks in your discord in order so the bot work.__
 ```
 @Wood,        0.00 → 0.99  K/D  
 @Carton,      1.00 → 1.49  K/D  
@@ -30,8 +30,9 @@ Jean-Michel Poirier (poirier.jmp@gmail.com)
 
 ## How to run?
 
-To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token. 
-Then, modify the constant ```FORTNITE_API_KEY``` with your fornitetracker api key. You can get one at https://fortnitetracker.com  
+To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token. You can find your discord token at https://discordapp.com/developers/applications/me/   
+You need to create an app then copy the token from the app.  
+Then, modify the constant ```FORTNITE_API_KEY``` with your fornitetracker api key. You can get one at https://fortnitetracker.com/site-api 
 
 You are all setup to run the script, execute the command ```./script.sh```  
 
