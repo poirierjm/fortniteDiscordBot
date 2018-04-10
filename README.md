@@ -4,7 +4,7 @@
 
 With this script, discord users can rank themself with commands.  
 Your rank depend of your overall fortnite Kill/Death ratio.
-Here are the ranks you can have, __you need to create all of these ranks in your discord in order so the bot work.__
+Here are the ranks you can have, __you need to create all of these ranks in your discord in order so the bot work. If you misspelled a word, errors will occur.__
 ```
 @Wood,        0.00 → 0.99  K/D  
 @Carton,      1.00 → 1.49  K/D  
