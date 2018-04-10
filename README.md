@@ -27,6 +27,7 @@ An example of a discord implementing the bot.
 ## Author
 
 Jean-Michel Poirier (poirier.jmp@gmail.com)   
+Discord: Wiz#8991
 
 ## How to run?
  
