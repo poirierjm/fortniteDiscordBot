@@ -11,7 +11,7 @@ Here are the ranks you can have, __you need to create all of these ranks in your
 @Bronze,      1.50 → 1.99  K/D  
 @Silver,      2.00 → 2.49  K/D  
 @Gold,        2.50 → 2.99  K/D  
-@Platinium,   3.00 → 3.49  K/D  
+@Platinum,    3.00 → 3.49  K/D  
 @Diamond,     3.50 → 3.99  K/D  
 @Ruby,        4.00 → 4.99  K/D  
 @Royality,    5.00 → 5.99  K/D  
