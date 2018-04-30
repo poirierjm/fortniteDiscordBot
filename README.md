@@ -30,8 +30,8 @@ Jean-Michel Poirier (poirier.jmp@gmail.com)
 
 ## How to run?
 
-To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token. 
-Then, modify the constant ```FORTNITE_API_KEY``` with your fornitetracker api key. You can get one at https://fortnitetracker.com  
+To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token that you can find at https://discordapp.com/developers/applications/me  
+Then, modify the constant ```FORTNITE_API_KEY``` with your fornitetracker api key. You can get one at https://fortnitetracker.com/site-api
 
 You are all setup to run the script, execute the command ```./script.sh```  
 

@@ -6,7 +6,8 @@ import math
 client = discord.Client()
 
 # Constant
-DISCORD_TOKEN = "NDA4MTU2OTE2NDA2Mjg4Mzg1.DVL9Ww.e9ku6WBNQwmvz0rzY_i6wrogeMI"
+DISCORD_TOKEN = "NDA4MTU2OTE2NDA2Mjg4Mzg1.DVL9Ww.e9ku6WBNQwmvz0rzY_i6wrogwXY"
+
 FORTNITE_API_KEY = 'ea5ffa46-76a0-426c-a2e8-8b9c6084ee96'
 
 LISTE = ['Wood', 'Carton', 'Bronze', 'Silver', 'Gold', 'Platinum', 'Diamond', 'Ruby', 'Royality', 'Illuminati', 'Hackeur']
@@ -53,51 +54,45 @@ def get_ratio(username):
         print("Error recovering fortnite data")
         return "-2"
 
-def get_role(server_roles, target_name):
-   for each in server_roles:
-      if each.name == target_name:
-         return each
-   return None
-
 def print_nextLvl(begin, end, ratio):
     rang = end - begin 
-    if ratio >= rang * 0.00 + begin and ratio <= rang * 0.05 + begin:
+    if ratio >= rang * 0.00 + begin and ratio <= rang * 0.059999 + begin:
         return '[■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.06 + begin and ratio <= rang * 0.10 + begin:
+    elif ratio >= rang * 0.06 + begin and ratio <= rang * 0.109999 + begin:
         return '[■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.11 + begin and ratio <= rang * 0.15 + begin:
+    elif ratio >= rang * 0.11 + begin and ratio <= rang * 0.159999 + begin:
         return '[■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.16 + begin and ratio <= rang * 0.20 + begin:
+    elif ratio >= rang * 0.16 + begin and ratio <= rang * 0.209999 + begin:
         return '[■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.21 + begin and ratio <= rang * 0.25 + begin:
+    elif ratio >= rang * 0.21 + begin and ratio <= rang * 0.259999 + begin:
         return '[■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.26 + begin and ratio <= rang * 0.30 + begin:
+    elif ratio >= rang * 0.26 + begin and ratio <= rang * 0.309999 + begin:
         return '[■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.31 + begin and ratio <= rang * 0.35 + begin:
+    elif ratio >= rang * 0.31 + begin and ratio <= rang * 0.359999 + begin:
         return '[■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.36 + begin and ratio <= rang * 0.40 + begin:
+    elif ratio >= rang * 0.36 + begin and ratio <= rang * 0.409999 + begin:
         return '[■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.41 + begin and ratio <= rang * 0.45 + begin:
+    elif ratio >= rang * 0.41 + begin and ratio <= rang * 0.459999 + begin:
         return '[■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.46 + begin and ratio <= rang * 0.50 + begin:
+    elif ratio >= rang * 0.46 + begin and ratio <= rang * 0.509999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.51 + begin and ratio <= rang * 0.55 + begin:
+    elif ratio >= rang * 0.51 + begin and ratio <= rang * 0.559999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.56 + begin and ratio <= rang * 0.60 + begin:
+    elif ratio >= rang * 0.56 + begin and ratio <= rang * 0.609999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.61 + begin and ratio <= rang * 0.65 + begin:
+    elif ratio >= rang * 0.61 + begin and ratio <= rang * 0.659999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.66 + begin and ratio <= rang * 0.70 + begin:
+    elif ratio >= rang * 0.66 + begin and ratio <= rang * 0.709999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.71 + begin and ratio <= rang * 0.75 + begin:
+    elif ratio >= rang * 0.71 + begin and ratio <= rang * 0.759999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□]'
-    elif ratio >= rang * 0.76 + begin and ratio <= rang * 0.80 + begin:
+    elif ratio >= rang * 0.76 + begin and ratio <= rang * 0.809999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□]'
-    elif ratio >= rang * 0.81 + begin and ratio <= rang * 0.85 + begin:
+    elif ratio >= rang * 0.81 + begin and ratio <= rang * 0.859999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□]'
-    elif ratio >= rang * 0.86 + begin and ratio <= rang * 0.90 + begin:
+    elif ratio >= rang * 0.86 + begin and ratio <= rang * 0.909999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□]'
-    elif ratio >= rang * 0.91 + begin and ratio <= rang * 0.95 + begin:
+    elif ratio >= rang * 0.91 + begin and ratio <= rang * 0.959999 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□]'
     elif ratio >= rang * 0.96 + begin and ratio <= rang * 1.00 + begin:
         return '[■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□]'
@@ -112,6 +107,9 @@ async def on_message(message):
         await client.send_message(message.channel, 'Last patchnotes: https://www.epicgames.com/fortnite/en/news')
     # The command /rank return attribute a rank according to the K/D of the user
     if message.content.startswith("/rank"):
+        for list in LISTE:
+            roles = discord.utils.get(message.server.roles, name=list)
+            await client.remove_roles(message.author, roles)
         username = '{0.author.display_name}'.format(message)
         ratio = float(get_ratio(username))
         print(ratio)
@@ -122,9 +120,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(CARTON_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(WOOD_B, WOOD_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= CARTON_B and ratio <= CARTON_E:
             role = discord.utils.get(message.server.roles, name=LISTE[1])
@@ -133,9 +128,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(BRONZE_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(CARTON_B, CARTON_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= BRONZE_B and ratio <= BRONZE_E:
             role = discord.utils.get(message.server.roles, name=LISTE[2])
@@ -144,9 +136,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(SILVER_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(BRONZE_B, BRONZE_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= SILVER_B and ratio <= SILVER_E:
             role = discord.utils.get(message.server.roles, name=LISTE[3])
@@ -155,9 +144,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(GOLD_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(SILVER_B, SILVER_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= GOLD_B and ratio <= GOLD_E:
             role = discord.utils.get(message.server.roles, name=LISTE[4])
@@ -166,9 +152,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(PLATINUM_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(GOLD_B, GOLD_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role)  
         elif ratio >= PLATINUM_B and ratio <= PLATINUM_E:
             role = discord.utils.get(message.server.roles, name=LISTE[5])
@@ -177,9 +160,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(DIAMOND_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(PLATINUM_B, PLATINUM_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= DIAMOND_B and ratio <= DIAMOND_E:
             role = discord.utils.get(message.server.roles, name=LISTE[6])
@@ -188,9 +168,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(RUBY_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(DIAMOND_B, DIAMOND_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= RUBY_B and ratio <= RUBY_E:
             role = discord.utils.get(message.server.roles, name=LISTE[7])
@@ -199,9 +176,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(ROYALITY_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(RUBY_B, RUBY_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= ROYALITY_B and ratio <= ROYALITY_E:
             role = discord.utils.get(message.server.roles, name=LISTE[8])
@@ -210,9 +184,6 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(ILLUMINATI_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(ROYALITY_B, ROYALITY_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= ILLUMINATI_B and ratio <= ILLUMINATI_E:
             role = discord.utils.get(message.server.roles, name=LISTE[9])
@@ -221,19 +192,13 @@ async def on_message(message):
             msgRatio = "Next level: " + str(ratio) + "k/d  **→**  " + str(HACKEUR_B) + "k/d"
             await client.send_message(message.channel, msgRatio)
             await client.send_message(message.channel, print_nextLvl(ILLUMINATI_B, ILLUMINATI_E, ratio))
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio >= HACKEUR_B:
             role = discord.utils.get(message.server.roles, name=LISTE[10])
             msg = ("{0.author.mention} Your have been ranked " + role.name).format(message)
             await client.send_message(message.channel, msg)
-            msgRatio = "Your ratio: " + str(ratio) + " K/D \n Niveau Max! ¯\_(ツ)_/¯ "
+            msgRatio = "Your ratio: " + str(ratio) + " K/D \n Max level! ¯\_(ツ)_/¯ "
             await client.send_message(message.channel, msgRatio)
-            for list in LISTE:
-                roles = discord.utils.get(message.server.roles, name=list)
-                await client.remove_roles(message.author, roles)
             await client.add_roles(message.author, role) 
         elif ratio == -1:
             msg = "Your discord name is not a fortnite username! Use the command ```/nick YOUR_FORTNITE_USERNAME``` first!".format(message)
