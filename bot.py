@@ -1,6 +1,5 @@
 
 import discord
-import requests
 import math
 
 client = discord.Client()
