@@ -4,7 +4,7 @@
 
 With this script, discord users can rank themself with commands.  
 Your rank depend of your overall fortnite Kill/Death ratio.
-Here are the ranks you can have, __you need to create all of these ranks in your discord in order so the bot work. If you misspelled a word, errors will occur.__
+Here are the ranks you can have, __you need to create all of these ranks in your discord in order the bot to work. If you misspelled a word, errors will occur.__
 ```
 @Wood,        0.00 → 0.99  K/D  
 @Carton,      1.00 → 1.49  K/D  
@@ -29,10 +29,10 @@ An example of a discord implementing the bot.
 Jean-Michel Poirier (poirier.jmp@gmail.com)   
 Discord: Wiz#8991
 
-## How to run?
+## How to setup and run the bot?
  
-__1-__ Make sure you have python3 installed on the bash you are using.  
-__2-__ Install the discord library ```python3 -m pip install -U discord.py```  
+__1-__ Make sure you have python3 installed on the terminal you are using.  
+__2-__ Install the discord library by typing this command in your terminal: ```python3 -m pip install -U discord.py```  
 __3-__ To setup the bot, open the file ```bot.py``` and modify the constant ```DISCORD_TOKEN``` with your own discord token. You can find your discord token at https://discordapp.com/developers/applications/me/   
 You need to create an app then copy the token from the app.  
 __4-__ To add the bot to your discord, from the app created copy your Client ID into this URL: https://discordapp.com/oauth2/authorize?&client_id=CLIENT_ID_HERE&scope=bot&permissions=470019135 and paste this URL into a web navigator.  
